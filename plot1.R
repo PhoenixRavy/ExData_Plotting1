@@ -1,5 +1,5 @@
 #setwd("~/Coursera")
-data <- read.csv("household_power_consumption.txt", sep=";", header=TRUE,stringsAsFactors=FALSE, na.strings="?")
+data <- read.csv("household_power_consumption.txt", sep=";", header=TRUE, stringsAsFactors=FALSE, na.strings="?")
 data$DateTime=paste(data$Date, data$Time)
 data$DateTime=as.POSIXlt(data$DateTime, format="%d/%m/%Y %H:%M:%S")
 data$Date=NULL
