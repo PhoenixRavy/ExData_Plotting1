@@ -9,5 +9,5 @@ data$Time=NULL
 subdata <- subset(data, DateTime$year==107 & DateTime$mon==1 & (DateTime$mday==1 | DateTime$mday==2))
 
 png("plot2.png", width=480, height=480)
-plot(x=(subdata$DateTime), y=subdata$Global_active_power, ylab="Global Active Power (kilowatts)", xlab=NA, type="l")
+plot(x=(subdata$DateTime), y=subdata$Global_active_power, xlab=NA, ylab="Global Active Power (kilowatts)", type="l")
 dev.off()
