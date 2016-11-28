@@ -1,5 +1,4 @@
 #setwd("~/Coursera")
-library(dplyr)
 
 data <- read.csv("household_power_consumption.txt", sep=";", header=TRUE,stringsAsFactors=FALSE,na.strings="?")
 
